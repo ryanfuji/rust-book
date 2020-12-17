@@ -50,7 +50,7 @@ fn _statements2() {
 // Consider a simple math operation, like `5 + 6`, which is an expression that evaluates to the value
 // 11. Expressions can be part of statements...
 fn expressions() {
-    let x = 5;
+    let _x = 5;
     // in the block below, it evaluates to 4. That value gets bound to `y` as part of the `let`
     // statement
     let y = {
