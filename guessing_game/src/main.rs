@@ -75,6 +75,14 @@ fn main() {
             Err(_) => continue,
         };
 
+        // The `if` expression checks whether our value is out of range, tells the user about the
+        // problem, and calls `continue`, can proceed with the comparisons `guess` and the secret
+        // number knowing that `guess` is between 1 and 100
+        if guess < 1 || guess > 100 {
+            println!("The secret number will be between 1 and 100.");
+            continue;
+        }
+
         println!("You guessed: {}", guess);
 
         // the `cmp()` method compares two values and can be called on anything that can be compared
